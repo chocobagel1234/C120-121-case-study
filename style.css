@@ -1,0 +1,59 @@
+/*CSS rules to specify font families:
+
+font-family: 'Catamaran', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Varela Round', sans-serif;*/
+
+body {
+    text-align: center;
+}
+
+.header-blue {
+    color:rgb(13, 73, 193);
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+.title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+}
+
+.header-div {
+    background-color: white !important;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#google_lens {
+    display: inline-block !important;
+    width: 20%;
+}
+
+ 
+.invis-text {
+    color:rgba(0, 255, 255, 0);
+    font-size: xx-small;
+}
+
+#join {
+    text-align:center;
+    background-color: #aeaeff;
+    border-radius: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bolder; 
+    color: #3b3bbc;
+    
+    h1 {
+        top: 50% !important;
+        font-family: inherit;
+        font-weight: inherit;
+    }
+}
+
+#mobile_net {
+    display: inline-block !important;
+    width: 60%;
+}
