@@ -3,16 +3,64 @@
 font-family: 'Catamaran', sans-serif;
 font-family: 'Manrope', sans-serif;
 font-family: 'Space Grotesk', sans-serif;
-font-family: 'Varela Round', sans-serif;*/
+font-family: 'Varela Round', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
 
 body {
     text-align: center;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #F8F9FA;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #aeaeff;
+  outline: 1px solid #aeaeff;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #a5a5f2;
+    outline: 1px solid #a5a5f2;
+    border-radius: 10px;
+  }
+
+nav {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.display-1 {
+    font-family: 'Manrope', sans-serif !important;
+    font-weight:200;
+    font: size 100px;;
+}
+
+.active {
+    color:#3b3bbc !important;
+    font-weight: 600 !important;
 }
 
 .header-blue {
     color:rgb(13, 73, 193);
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
+}
+
+.test-img {
+    width: 50% !important;
+    border-radius: 10px;
+}
+
+.col-lg-8 {
+    background-color: #aeaeff;
+    padding: 15px;
+    border-radius: 20px;
 }
 
 .title {
@@ -32,28 +80,53 @@ body {
     width: 20%;
 }
 
+.navbar-toggler {
+    background-color: #aeaeff !important;
+    border: none;
+}
+
+.navbar-toggler:hover {
+    background-color: #9b9be1 !important;
+    border: none;
+}
+
+#brand_img {
+    top: 80px !important;
+}
  
 .invis-text {
     color:rgba(0, 255, 255, 0);
     font-size: xx-small;
 }
 
+
+
 #join {
     text-align:center;
     background-color: #aeaeff;
     border-radius: 20px;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: bolder; 
+    font-family: 'Manrope', sans-serif;
+    font-weight: 100; 
     color: #3b3bbc;
     
     h1 {
         top: 50% !important;
         font-family: inherit;
-        font-weight: inherit;
+        font-weight:inherit;
     }
 }
 
 #mobile_net {
     display: inline-block !important;
     width: 60%;
+}
+
+#waterbottle, #handbag, #pillow, #book, #glue_stick, #pen, #scissors, #fan, #chair, #headphones {
+    display: flex;
+    padding:1.5rem;
+}
+
+
+#results {
+    display: inline-block !important;
 }

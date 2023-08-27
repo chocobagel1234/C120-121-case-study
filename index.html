@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Case Study</title>
         <!--Favicon-->
         <link rel="icon" type="image/x-icon" href="case-study-favicon.png">
-
 
         <!--Bootstrap CSS 5.3.1-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -18,16 +18,60 @@
         <!--ml5.js 0.12 (latest patch)-->
         <script src="https://cdn.jsdelivr.net/npm/ml5@0.12/dist/ml5.min.js" integrity="sha256-iQbe0yNN03kqLc73kMHycDPwWTE/i4W8j4HhBCDow0Y=" crossorigin="anonymous"></script>
 
-        <!--Google Fonts - Varela Round, Manrope, Catamaran and Space Grotesk-->
+        <!--Google Fonts - Varela Round, Manrope, Catamaran, Open Sans and Space Grotesk-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
 
         <!--style.css link-->
         <link rel="stylesheet" type="text/css" href="style.css"></link> 
     </head>
 
-    <body style="background-color: rgb(187, 212, 255);">
+    <body style="background-color: rgb(187, 212, 255);" data-bs-spy="scroll" data-bs-target="#myNavbar">
+        <nav id="myNavbar" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="case-study-favicon.png" id="brand_img" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Case Study</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#waterbottle">Waterbottle</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#handbag">Handbag</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pillow">Pillow</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#book">Book</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#glue_stick">Glue Stick</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pen">Pen</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scissors">Scissors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#fan">Fan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#chair">Chair</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#headphones">Headphones</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+<br>
         <center>
             <h1 class="header-blue">Case Study Between</h1>
             <br>
@@ -50,28 +94,339 @@
             </div>
         </div>
 <br>
-    <ol>
-        <div class="test-img-&-result col-xs-12">
-            <li class="col-sm-4 col-xs-12">
-                <strong>Test Image - </strong>
-                <image src="bottle.jpg" class="img-responsive"/>
+
+        <div id="waterbottle" class="container test-img-&-result col-lg-8">
+            <li id="image1" class="test-img col-sm-4 col-xs-12"> 
+                <strong>Test Image - Water Bottle</strong>
+                <br>
+                <image src="bottle.jpg" class="img-responsive test-img"/>
             </li>
 
-            <h5 class="col-sm-4 col-xs-12">
-                Output on <b>Google Lens</b>
-                <span> </span>
-            </h5>
-
-            <div class="mini-result col-xs-12">
-                <h4>Result: </h4>
-                <hr>
-                <h4> </h4>
-            </div>
+            <div id="results1">
+                <div id="row-div2" class="container text-center">
+                    <div class="row header-div">
+                        <div class="col google-lens_div">
+                            <h5 id="google_lens_output">
+                                Output on <b>Google Lens</b>
+                            </h5>
+                        </div>
+    
+                        <div class="col text-center mobileNet_div">
+                            <h5 id="mobile_net_output">
+                                Output on <b>MobileNet</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="mini-result col-xs-12">
+                    <h4><strong>Result: </strong> </h4>
+                    <hr>
+                    <h4> </h4>
+                </div>
+             </div>
 
         </div>
         <br>
 
-    </ol>
+        <div id="handbag" class="container test-img-&-result col-lg-8">
+            <li id="image2" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Handbag</strong>
+                <br>
+                <image src="handbag.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results2">
+            <div id="row-div2" class="container text-center">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+
+        <div id="pillow" class="container test-img-&-result col-lg-8">
+            <li id="image3" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Pillow</strong>
+                <br>
+                <image src="pillow.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results3">
+            <div id="row-div2" class="container text-center">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+
+        <div id="book" class="container test-img-&-result col-lg-8">
+            <li id="image4" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Book</strong>
+                <br>
+                <image src="book.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results4">
+            <div id="row-div2" class="container text-center">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+
+        <div id="glue_stick" class="container test-img-&-result col-lg-8">
+            <li id="image5" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Glue Stick</strong>
+                <br>
+                <image src="glue-stick.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results5">
+            <div id="row-div2" class="container text-center">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+
+        <div id="pen" class="container test-img-&-result col-lg-8">
+            <li id="image6" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Pen</strong>
+                <br>
+                <image src="pen.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results6">
+            <div id="row-div2" class="container text-center">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+
+        <div id="scissors" class="container test-img-&-result col-lg-8">
+            <li id="image7" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Scissors</strong>
+                <br>
+                <image src="scissors.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results7">
+            <div id="row-div2" class="container text-center">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b> - 
+                        </h5>
+                        <p class="lead">spotlight, spot</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+
+        <div id="fan" class="container test-img-&-result col-lg-8">
+            <li id="image8" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Fan</strong>
+                <br>
+                <image src="fan.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results8">
+            <div id="row-div2" class="container text-center">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+
+        <div id="chair" class="container test-img-&-result col-lg-8">
+            <li id="image9" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Chair</strong>
+                <br>
+                <image src="chair.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results9">
+            <div class="container text-center row-div">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+
+        <div id="headphones" class="container test-img-&-result col-lg-8">
+            <li id="image10" class="test-img col-sm-4 col-xs-12">
+                <strong>Test Image - Headphones</strong>
+                <br>
+                <image src="headphones.jpg" class="img-responsive test-img"/>
+            </li>
+
+            <div id="results10">
+            <div class="container text-center row-div">
+                <div class="row header-div">
+                    <div class="col google-lens_div">
+                        <h5 id="google_lens_output">
+                            Output on <b>Google Lens</b>
+                        </h5>
+                    </div>
+
+                    <div class="col text-center mobileNet_div">
+                        <h5 id="mobile_net_output">
+                            Output on <b>MobileNet</b>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mini-result col-xs-12">
+                <h4><strong>Result: </strong> </h4>
+                <hr>
+                <h4> </h4>
+            </div>
+         </div>
+        </div>
+        <br>
+        <br>
 
         </center>
 
