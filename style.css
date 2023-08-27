@@ -11,23 +11,23 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0.5em;
+    width: 0.5em !important;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #F8F9FA;
+    background-color: #F8F9FA !important;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #aeaeff;
-  outline: 1px solid #aeaeff;
-  border-radius: 10px;
+  background-color: #aeaeff !important;
+  outline: 1px solid #aeaeff !important;
+  border-radius: 10px !important;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #a5a5f2;
-    outline: 1px solid #a5a5f2;
-    border-radius: 10px;
+    background-color: #a5a5f2 !important;
+    outline: 1px solid #a5a5f2 !important;
+    border-radius: 10px !important;
   }
 
 nav {
