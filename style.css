@@ -30,8 +30,18 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 10px !important;
   }
 
+:root {
+    scroll-behavior: smooth;
+}
+
 nav {
     font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+    line-height: 60px;
+    letter-spacing: -2%;
+    text-wrap: balance;
 }
 
 
@@ -62,7 +72,10 @@ nav {
 .header-blue {
     color:rgb(13, 73, 193);
     font-family: 'Varela Round', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67.2px;
+    letter-spacing: -2%;
 }
 
 .test-img {
@@ -72,6 +85,11 @@ nav {
 
 .final-verdict {
     background-color: #F8F9FA !important;
+    #final_para {
+        text-align: left !important;
+        font-weight: 350;
+        line-height: 50px;
+    }
 }
 
 .col-lg-8 {
